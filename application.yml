@@ -1,11 +1,11 @@
 eureka:
- client:
-  registerWithEureka: true
-   fetchRegistry: true
-   serviceUrl:
-    defaultZone: http://localhost:8010/eureka/
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka/
   instance:
-   hostname: localhost
+    hostname: localhost
       
 ---
 spring:
@@ -14,20 +14,20 @@ words: I,You,He,She,It
 
 ---
 spring:
- profiles: verb
+  profiles: verb
 words: ran,knew,had,saw,bought
 
 ---
 spring:
- profiles: article
+  profiles: article
 words: a,the
 
 ---
 spring:
- profiles: adjective
+  profiles: adjective
 words: reasonable,leaky,suspicious,ordinary,unlikely
 
 ---
 spring:
- profiles: noun
+  profiles: noun
 words: boat,book,vote,seat,backpack,partition,groundhog 
